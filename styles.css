@@ -4,6 +4,7 @@
   --primary-color: #ed6436;
   --light-color: #fff;
   --dark-color: #000;
+  --category-font-size: 1rem;
 }
 
 *,
@@ -55,4 +56,68 @@ body {
 
 input {
   border: none;
+}
+
+.main-container {
+  padding: 2rem;
+}
+
+.pet-activities {
+  display: flex;
+  padding: 2rem 0 1rem 0;
+  flex-direction: column;
+}
+
+.pet-activities__category {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: var(--category-font-size);
+}
+
+.pet-activities__second-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet-activities__heading {
+  color: var(--dark-color);
+  font-size: 3rem;
+}
+
+.button {
+  border-radius: 0 1rem 1rem 1rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.pet-activities__second-line .button-primary {
+  align-self: flex-start;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.pets ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pet-card {
+  height: 400px;
+  border-radius: 25px;
+  width: 350px;
+}
+
+.pet-card > .pet-card__image {
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  object-fit: cover;
 }
