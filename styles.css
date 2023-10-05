@@ -4,6 +4,7 @@
   --primary-color: #ed6436;
   --light-color: #fff;
   --dark-color: #000;
+  --dark-color-transparent: #00000042;
   --category-font-size: 1rem;
 }
 
@@ -52,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--form-background-color);
+  font-family: var(--font-family);
 }
 
 input {
@@ -113,6 +115,33 @@ input {
   height: 400px;
   border-radius: 25px;
   width: 350px;
+  position: relative;
+}
+
+.card-text__sub-category {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card-text__activity-title {
+  font-weight: 800;
+  margin: 10px 0 0 0;
+}
+
+.pet-card__card-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font: inherit;
+  top: 0;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  opacity: 0;
+  background-color: var(--dark-color-transparent);
+  color: var(--light-color);
 }
 
 .pet-card > .pet-card__image {
@@ -120,4 +149,8 @@ input {
   width: inherit;
   border-radius: inherit;
   object-fit: cover;
+}
+
+.pet-card:hover .pet-card__card-overlay {
+  opacity: 1;
 }
