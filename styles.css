@@ -104,6 +104,12 @@ input {
   color: var(--light-color);
 }
 
+.button-primary:hover {
+  background-color: var(--light-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
 .pets ul {
   display: flex;
   flex-direction: row;
