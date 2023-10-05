@@ -154,3 +154,39 @@ input {
 .pet-card:hover .pet-card__card-overlay {
   opacity: 1;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .pet-activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pet-activities__second-line {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pet-activities__second-line .pet-activities__heading {
+    font-size: 2rem;
+  }
+
+  .pet-activities__second-line .button {
+    margin: 1rem 0 0 0;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .pets ul {
+    justify-content: center;
+  }
+
+  .pets .pet-card {
+    margin: 1rem 0 0 0;
+    height: 250px;
+    width: 320px;
+  }
+}
